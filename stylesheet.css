@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+body {
+    font-family: 'Zilla Slab', sans-serif;
+    background-color: #dcedc8;
+}
+
+input, button {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+
+#topbar {
+    background-color: #373737;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 8px;
+}
+
+#searchbox {
+    padding: 10px;
+    background-color: #373737;
+    display: none;
+}
+
+#searchbox input {
+    height: 25px;
+    color: #373737;
+    width: 200px;
+}
+
+#searchbox button {
+    height: 31px;
+    background-color: #c1a0d6;
+    border: 2px solid #c1a0d6;
+    width: 80px;
+}
+
+#topbar #searchicon {
+    float: right;
+}
+
+#mainbody {
+    color: white;
+    background-color: #d793f5;
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    animation: appear 1s 1;
+}
+
+#forecast {
+    width: 300px;
+    height: 450px;
+    border: 1.5px solid white;
+    color: white;
+    animation: forecast 1s 1;
+}
+
+#city {
+    font-size: 40px;
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+#mainbody img {
+    float: right;
+}
+
+#temp {
+    float: right;
+    font-size: 25px;
+    padding-right: 2px;
+    font-weight: bold;
+}
+#cond {
+    float: left;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+#more {
+    width: 250px;
+    background-color: #373737;
+    padding: 5px;
+    margin: 5px;
+    height: 27px;
+}
+
+#more #label {
+    float: left;
+    padding-left: 5px;
+}
+
+#wind {
+    text-align: right;
+}
+
+#forecast img {
+    height: 45px;
+    width: 45px;
+    float: left;
+}
+
+
+#forecast #date {
+    color: white;
+    font-size: 24px;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    padding-top: 0px;
+}
+
+#forecast #avgtemp {
+    float: right;
+    padding-top: 3px;
+    font-size: 23px;
+}
+
+#forecast #summary {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#wind, #direction, #humidity, #feel, #mintemp, #maxtemp, #avghumidity, #rainchance, #sunrise, #sunset, #moonrise, #moonset {
+    float: right;
+}
+
+#forecastlabel {
+    color: white;
+    background-color: #373737;
+    padding: 5px;
+}
+
+#forecast #top {
+    background-color: #373737;
+    height: 45px;
+    padding: 5px;
+}
+
+#footer {
+    background-color: #3d6eff;
+    font-size: 18px;
+    color: white;
+    padding: 8px;
+}
+
+@keyframes appear {
+    from {
+        width: 0px;
+    }
+    to {
+    
+    width: 300px;
+    }
+}
+
+@keyframes forecast {
+    from {
+        height: 0px;
+        width: 0px;
+    }
+    to {
+        height: 420px;
+        width: 300px;
+    }
+}
